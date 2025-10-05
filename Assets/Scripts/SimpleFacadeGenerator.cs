@@ -70,7 +70,9 @@ public class SimpleFacadeGenerator : ScriptableObject
         tex.Apply();
 
         // Create material and assign the generated texture
-        Shader shader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
+        //Shader shader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
+        Shader shader = Shader.Find("Standard");
+
         Material mat = new Material(shader);
 
         if (mat.HasProperty("_BaseMap")) mat.SetTexture("_BaseMap", tex);
@@ -86,4 +88,5 @@ public class SimpleFacadeGenerator : ScriptableObject
 
         return mat;
     }
+
 }
