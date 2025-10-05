@@ -7,8 +7,8 @@ public class CityGenerator : MonoBehaviour
     public SimpleFacadeGenerator facadeGenerator; // Assign your procedural facade asset here
 
     [Header("City Layout (in blocks)")]
-    public int blocksX = 15;
-    public int blocksY = 15;
+    public int blocksX = 4;
+    public int blocksY = 4;
 
     [Header("Block Settings")]
     public int buildingsPerBlock = 3;  // 3x3 buildings per block
